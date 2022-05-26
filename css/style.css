@@ -181,6 +181,21 @@ body, html {
     }
 }
 
+@media screen and (max-width: 380px) {
+    .list-shoes {
+        width: 300px;
+    }
+    .list-shoes > div {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+    }
+    #brand, #color, #size {
+        width: 5em;
+    }
+}
+
 /* cart */
 table {
     background-color: #fff;
