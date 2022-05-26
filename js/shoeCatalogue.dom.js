@@ -48,6 +48,7 @@ if(window.location.href.endsWith("index.html") || window.location.href.endsWith(
         document.querySelector(".shoesData").innerHTML = tableTemplateHTML
     }
 
+    // show the avaliable shoes
     const updateDisplay = () => {
         getLocalStorage().length >= 0 && catalogue.updateTheShoes(getLocalStorage())
         const byColor = catalogue.getShoesByColor(catalogue.getAllShoes(), colorSelect.value)
@@ -73,6 +74,9 @@ if(window.location.href.endsWith("index.html") || window.location.href.endsWith(
         // if any from localsorage
         updateDisplay()
     })
+
+    // always show the available shoes by default
+    updateDisplay()
 }
 // END HOME PAGE
 
