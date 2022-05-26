@@ -114,12 +114,14 @@ if(window.location.href.endsWith("new.html")){
 // I want this script to to only run on the cart page
 if(window.location.href.endsWith("cart.html")){
     const cartTemplate = array => {
+        // get the total of the items in array
+        let total = array.map(obj => obj['price']).reduce((s,v)=>s+v,0)
         
         const template = document.querySelector(".tableTemplate").innerHTML
 
         const tableTemplate = Handlebars.compile(template)
 
-        const tableTemplateHTML = tableTemplate({shoes: array})
+        const tableTemplateHTML = tableTemplate({shoes: array, totals: total})
 
         document.querySelector(".tableData").innerHTML = tableTemplateHTML
     }
