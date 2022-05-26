@@ -7,6 +7,7 @@
 /* styling the body */
 body, html {
     background-color: lightslategray;
+    overflow-x: hidden;
 }
 
 /* adding page navigation */
@@ -92,7 +93,7 @@ body, html {
 
 /* the displayed cards */
 .list-shoes {
-    width: 600px;
+    width: max-content;
     background-color: #fff;
 }
 .list-shoes > div {
@@ -108,7 +109,7 @@ body, html {
     align-items: center;
     border: 1px solid black;
     margin: 1em;
-    background-color: rgb(114, 106, 105);
+    background-color: lightgray;
     padding: 1em;
 }
 .card > .image-box {
@@ -262,4 +263,8 @@ th, td {
 
 .card > .details > .card-details {
     font-size: 1em;
+}
+
+.card > h3 {
+    text-transform: uppercase;
 }
