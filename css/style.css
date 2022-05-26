@@ -108,7 +108,7 @@ body, html {
     align-items: center;
     border: 1px solid black;
     margin: 1em;
-    background-color: salmon;
+    background-color: rgb(114, 106, 105);
     padding: 1em;
 }
 .card > .image-box {
@@ -116,19 +116,6 @@ body, html {
     height: 10em;
     border: 1px solid black;
     margin-bottom: 5px;
-}
-
-.card > .details {
-    display: flex;
-    align-items: center;
-    height: 2em;
-    background-color: black;
-    color: white;
-}
-
-.card > .details > span {
-    border: 1px solid white;
-    padding: 5px;
 }
 
 .add-cart {
@@ -271,4 +258,8 @@ th, td {
 .add-form > form > div > input {
     width: 100%;
     height: 30px;
+}
+
+.card > .details > .card-details {
+    font-size: 1em;
 }

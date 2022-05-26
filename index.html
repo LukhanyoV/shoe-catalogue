@@ -67,9 +67,16 @@
                             <h3>{{brand}}</h3>
                             <img class="image-box" src="./img/default.jpg"/>
                             <div class="details">
-                                <span>Price: R{{price}}</span>
-                                <span>In stock: {{in_stock}}</span>
-                                <span>Size: {{size}}</span>
+                                <table class="card-details">
+                                    <tr>
+                                        <td>Price: R{{price}}</td>
+                                        <td>In stock: {{in_stock}}</td>
+                                    </tr>
+                                   <tr>
+                                        <td>Size: {{size}}</td>
+                                        <td>Color: {{color}}</td>
+                                   </tr>
+                                </table>
                             </div>
                             <button value="{{string this}}" class="add-cart">ADD TO CART</button value={{this}}>
                         </div>
