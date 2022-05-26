@@ -41,6 +41,7 @@ body, html {
 /* the filter section and the container */
 .container {
     background-image: url("../img/hero.png");
+    background-attachment: fixed;
     object-fit: cover;
     background-size: cover;
     display: flex;
@@ -48,6 +49,10 @@ body, html {
     justify-content: center;
     align-items: center;
     min-height: 90vh;
+}
+
+.heading {
+    background-color: #fff;
 }
 
 .heading > h1 {
@@ -88,7 +93,7 @@ body, html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid salmon;
+    border: 1px solid black;
     margin: 1em;
     background-color: salmon;
     padding: 1em;
